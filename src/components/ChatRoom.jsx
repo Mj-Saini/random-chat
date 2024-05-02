@@ -47,13 +47,13 @@ const ChatRoom = () => {
           <ReloadIcon />
         </span>
 
-        <span className="bg-[#435334] px-3 py-2 md:px-5 flex items-center justify-center  cursor-pointer  md:h-10 sm:h-[60px] md:border-l border-[#D6BC97] rounded">
+        <span className="bg-[#435334] inline-block px-3 py-2 md:px-5 md:py-4 h-full cursor-pointer rounded">
           <MediaIcon />
         </span>
       </div>
       <div className="border border-[#D6BC97] mb-5 mt-1 md:my-10 rounded-md flex items-center overflow-hidden  h-10 sm:h-[60px]">
-        <div className="md:flex items-center hidden">
-          <span className="bg-[#435334] inline-block md:px-5 md:py-4 h-full cursor-pointer">
+        <div className="md:flex items-center hidden bg-[#435334]">
+          <span className=" flex md:px-5 md:py-4 h-full cursor-pointer">
             <ReloadIcon />
           </span>
 

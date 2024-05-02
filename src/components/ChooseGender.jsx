@@ -1,12 +1,10 @@
 import React from "react";
-import { FemaleIcon, GoBackIcon, MaleIcon } from "./Icon";
+import { FemaleIcon, MaleIcon } from "./Icon";
+import { Link } from "react-router-dom";
 
 const ChooseGender = () => {
   return (
     <div className="mt-5 flex flex-col items-center justify-center relative h-full">
-      <span className="absolute top-4 left-4 ">
-        <GoBackIcon />
-      </span>
       <h2 className="font-bold text-xl md:text-2xl lg:text-4xl text-black mt-10 capitalize">
         Gender
       </h2>
@@ -14,7 +12,7 @@ const ChooseGender = () => {
         Choose you gender
       </p>
       <div className="flex gap-5 gl:gap-10 mt-10">
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-5">
           <span className="flex items-center justify-center w-[135px] h-[135px] rounded-full bg-[#FAF1E4]">
             <MaleIcon />
           </span>
@@ -22,7 +20,7 @@ const ChooseGender = () => {
             male
           </h2>
         </div>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-5">
           <span className="flex items-center justify-center w-[135px] h-[135px] rounded-full bg-[#FAF1E4]">
             <FemaleIcon />
           </span>
@@ -31,9 +29,12 @@ const ChooseGender = () => {
           </h2>
         </div>
       </div>
-      <button className="border border-black text-base lg:text-xl font-bold capitalize py-2 px-6 rounded-full my-5 hover:text-[#434334] hover:border-[#434334] duration-300">
+      <Link
+        to="/chat"
+        className="border border-black text-base lg:text-xl font-bold capitalize py-2 px-6 rounded-full my-5 hover:text-[#434334] hover:border-[#434334] duration-300"
+      >
         next
-      </button>
+      </Link>
     </div>
   );
 };
